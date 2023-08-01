@@ -1,27 +1,973 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="api_gateway:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e755646b-585e-4329-9952-7dc4db578950" name="Changes" comment="" />
+    <list default="true" id="e755646b-585e-4329-9952-7dc4db578950" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/api_gateway_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api_gateway/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api_gateway/Dockerfile.layered" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api_gateway/src/main/java/com/pradhidas/api_gateway/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api_gateway/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api_gateway/src/main/resources/application-docker.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api_gateway/src/test/out/artifacts/api_gateway_jar/api_gateway.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discovery_server_new/src/main/resources/application-docker.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory_service/src/main/resources/application-docker.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory_service/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory_service/src/main/resources/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data/WiredTiger" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data/WiredTiger.turtle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data/collection-0-2657719530900011257.wt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data/diagnostic.data/metrics.2023-07-31T11-05-28Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data/diagnostic.data/metrics.2023-08-01T13-01-49Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data/diagnostic.data/metrics.2023-08-01T13-58-58Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data/diagnostic.data/metrics.2023-08-01T14-07-06Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data/diagnostic.data/metrics.2023-08-01T17-17-02Z-00000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data/diagnostic.data/metrics.interim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data/index-1-2657719530900011257.wt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data/journal/WiredTigerLog.0000000007" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data/journal/WiredTigerPreplog.0000000001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo-data/journal/WiredTigerPreplog.0000000002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/auto.cnf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/client-cert.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/client-key.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/ibtmp1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/mysql/db.MYD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/mysql/db.MYI" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/mysql/engine_cost.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/mysql/engine_cost.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/mysql/func.MYD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/mysql/func.MYI" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/mysql/gtid_executed.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/mysql/gtid_executed.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/mysql/help_category.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/mysql/help_category.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/mysql/help_keyword.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/mysql/help_keyword.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/mysql/help_topic.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/mysql/help_topic.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/mysql/innodb_table_stats.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/mysql/innodb_table_stats.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/mysql/proc.MYD" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/mysql/proc.MYI" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/mysql/server_cost.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/mysql/server_cost.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/mysql/time_zone.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/mysql/time_zone.ibd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/performance_schema/events_stages_current.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/performance_schema/events_stages_history_long.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/performance_schema/events_stages_summary_by_user_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/performance_schema/events_statements_summary_by_account_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/performance_schema/events_statements_summary_by_user_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/performance_schema/events_statements_summary_global_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/performance_schema/events_transactions_current.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/performance_schema/events_transactions_summary_by_host_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/performance_schema/events_transactions_summary_by_thread_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/performance_schema/events_transactions_summary_global_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/performance_schema/events_waits_summary_by_account_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/performance_schema/events_waits_summary_by_user_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/performance_schema/events_waits_summary_global_by_event_name.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/performance_schema/file_instances.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/performance_schema/global_status.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/performance_schema/global_variables.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/performance_schema/mutex_instances.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/performance_schema/objects_summary_global_by_type.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/performance_schema/replication_applier_configuration.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/performance_schema/replication_applier_status_by_worker.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/performance_schema/replication_group_members.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/performance_schema/rwlock_instances.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/performance_schema/session_status.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/performance_schema/setup_timers.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/performance_schema/table_io_waits_summary_by_table.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/performance_schema/table_lock_waits_summary_by_table.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/performance_schema/user_variables_by_thread.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/performance_schema/variables_by_thread.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/sys/host_summary_by_stages.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/sys/host_summary_by_statement_type.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/sys/io_by_thread_by_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/sys/io_global_by_file_by_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/sys/memory_by_host_by_current_bytes.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/sys/memory_by_user_by_current_bytes.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/sys/memory_global_total.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/sys/schema_table_statistics_with_buffer.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/sys/sys_config_update_set_user.TRN" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/sys/user_summary.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/sys/user_summary_by_file_io.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/sys/user_summary_by_file_io_type.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/sys/wait_classes_global_by_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/sys/x@0024host_summary_by_file_io.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/sys/x@0024innodb_lock_waits.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/sys/x@0024io_global_by_file_by_bytes.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/sys/x@0024memory_by_user_by_current_bytes.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/sys/x@0024ps_schema_table_statistics_io.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/sys/x@0024schema_table_statistics.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/sys/x@0024schema_tables_with_full_table_scans.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/sys/x@0024wait_classes_global_by_avg_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mysql_keycloak_data/sys/x@0024waits_by_user_by_latency.frm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notification_service/src/main/resources/application-docker.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order_service/src/main/java/com/pradhidas/order_service/dto/OrderDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order_service/src/main/resources/application-docker.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order_service/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order_service/src/main/resources/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/1247" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/1249" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/1255_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/13398_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/13403_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/13411" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/13412" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/174" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/175" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/2224" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/2228" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/2579" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/2601_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/2603_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/2603_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/2605_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/2607_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/2608_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/2609_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/2612_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/2616_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/2618_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/2619_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/2620" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/2660" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/2661" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/2662" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/2663" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/2664" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/2665" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/2666" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/2667" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/2668" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/2669" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/2753" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/2754" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/2755" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/2756" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/2757" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/2838_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/2840" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/2840_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/2841" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/3079" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/3079_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/3079_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/3118" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/3119" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/3164" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/3379" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/3380" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/3381" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/3429" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/3466" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/3467" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/3468" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/3541_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/3541_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/3596" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/3597" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/3598" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/3599" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/3600" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/3600_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/3601" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/3602" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/3602_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/3603" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/3604" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/3605" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/3606" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/3607" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/3608" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/3609" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/3764_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/3997" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/4146" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/4147" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/4148" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/4149" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/4150" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/4151" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/4152" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/4153" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/4154" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/6106" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/6110" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/6111" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/6112" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/6113" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/1/6239" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/1247" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/1247_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/1249" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/1249_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/1255_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/13393_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/13398_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/13407" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/13408" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/13408_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/13411" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/13412" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/1417" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/1418" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/174" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2224" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2228" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/24584" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/24585" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/24589" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2579" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2600_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2602_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2605_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2609_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2612_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2613" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2615" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2616" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2616_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2617" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2618" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2619" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2619_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2620" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2660" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2661" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2662" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2663" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2664" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2665" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2666" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2667" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2668" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2669" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2701" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2702" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2703" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2704" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2753" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2753_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2754" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2831" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2832" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2833" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2834" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2835" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2836" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2837" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2838" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2838_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/2839" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/3079_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/3118" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/3119" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/3379" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/3394_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/3429" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/3466" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/3467" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/3468" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/3596" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/3597" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/3598" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/3599" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/3600" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/3601" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/3601_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/3764_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/4143" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/4144" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/4145" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/4146" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/4147" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/4148" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/4149" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/6102" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/6104" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/6106" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/6237" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/6238" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/6239" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/826" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/827" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/828" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/16384/pg_internal.init" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/1247" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/1247_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/13393_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/13403_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/174" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/175" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2224" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2228" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2579" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2602_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2606_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2606_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2608_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2609_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2610" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2611" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2612" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2615_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2615_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2617_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2618" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2619" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2619_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2653" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2654" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2655" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2656" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2657" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2658" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2659" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2660" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2661" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2662" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2663" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2664" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2702" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2703" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2704" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2830" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2832" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2835" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2836" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2836_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2837" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2838" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2838_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/2839" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/3118" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/3119" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/3379" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/3394_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/3466" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/3467" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/3468" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/3501" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/3502" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/3503" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/3596" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/3597" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/3598" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/3599" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/3600_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/3601_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/3766" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/3767" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/4170" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/4171" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/4172" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/4173" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/4174" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/6176" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/6228" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/4/6229" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/1247_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/1249_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/13393_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/13402" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/13403" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/13403_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/13406" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/13407" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/13408" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/13408_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/2336" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/2337" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/2600_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/2602_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/2602_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/2616_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/2618_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/2618_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/2680" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/2681" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/2682" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/2683" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/2684" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/2685" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/2686" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/2687" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/2688" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/2689" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/2753_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/2995" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/2996" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/3079_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/3085" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/3350" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/3351" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/3394" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/3394_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/3395" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/3440" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/3534" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/3574" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/3575" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/3576" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/3764_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/4150" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/4154" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/4155" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/4156" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/4157" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/4158" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/4159" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/4160" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/5002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/548" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/6111" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/6116" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/base/5/6117" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/global/1213_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/global/1260_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/global/1261_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/global/1262" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/global/1262_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/global/2396_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/global/pg_control" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/global/pg_internal.init" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/pg_subtrans/0000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/pg_wal/000000010000000000000001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/postmaster.opts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-inventory/postmaster.pid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/1255_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/1259_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/13393" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/13396" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/13397" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/13398" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/13403_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/13408_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2336" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2337" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2600" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2601" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2601_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2601_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2602" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2603" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2604" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2605" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2605_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2606" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2607" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2608" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2608_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2610_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2610_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2612_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2615_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2619_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2619_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2681" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2682" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2683" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2684" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2685" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2686" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2687" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2688" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2689" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2690" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2691" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2692" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2838_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2840_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2840_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2995" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/2996" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/3079_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/3456_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/3534" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/3541_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/3576" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/3712" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/4160" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/4163" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/4164" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/4165" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/4166" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/4167" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/4168" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/4169" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/548" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/1/549" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/1255" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/1255_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/1259" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/13398_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/13403_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/13403_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/16385" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/16386" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/16390" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/16392" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/16393" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/16397" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/16399" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/16402" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/2187" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/2601_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/2603_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/2605_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/2607_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/2609_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/2610_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/2610_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/2612_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/2612_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/2616_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/2617_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/2670" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/2673" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/2674" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/2675" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/2679" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/2756" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/2757" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/2836_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/2838_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/2840_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/2841" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/3079" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/3081" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/3164" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/3256" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/3257" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/3258" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/3380" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/3381" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/3430" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/3431" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/3433" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/3541_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/3600_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/3602_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/3603" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/3604" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/3605" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/3606" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/3607" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/3608" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/3609" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/3764_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/3764_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/4143" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/4144" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/4145" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/4146" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/4147" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/4148" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/4149" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/6102" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/6104" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/6106" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/6237" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/6238" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/6239" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/16384/pg_internal.init" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/1247_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/1255" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/1259" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/13393_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/13393_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/13397" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/13398" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/13398_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/13401" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/13402" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/13403" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/13406" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/13407" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/13408" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/13408_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/2328" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/2602_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/2607_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/2609_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/2609_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/2615_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/2618_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/2618_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/2670" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/2673" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/2674" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/2675" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/2678" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/2679" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/2753_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/3079" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/3080" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/3081" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/3085" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/3164" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/3256" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/3257" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/3258" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/3380" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/3381" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/3430" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/3431" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/3433" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/3439" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/3541_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/3600_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/3600_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/3602_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/3607" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/3608" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/3609" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/4143" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/4144" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/4145" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/4149" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/4150" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/4151" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/4152" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/4153" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/6102" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/6106" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/6110" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/6111" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/6112" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/6113" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/4/6239" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/1247" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/1249" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/1259_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/13393_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/13398_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/2224" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/2228" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/2579" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/2601_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/2603_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/2605_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/2607_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/2609_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/2612_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/2616_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/2616_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/2618_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/2620" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/2660" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/2661" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/2662" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/2663" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/2664" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/2665" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/2666" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/2667" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/2668" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/2669" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/2753" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/2754" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/2755" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/2756" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/2757" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/2839" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/2840" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/2841" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/3079_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/3118" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/3119" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/3379" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/3380" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/3381" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/3429" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/3466" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/3467" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/3468" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/3596" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/3597" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/3598" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/3599" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/3600" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/3600_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/3601" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/3602" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/3603" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/3603_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/3604" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/3605" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/3606" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/3607" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/3608" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/3997" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/4143" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/6104" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/6106" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/6229" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/6237" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/6238" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/6239" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/826" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/827" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/828" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/base/5/PG_VERSION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/global/1261_fsm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/global/1261_vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/global/2396" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/global/2397" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/global/2964" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/global/2965" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/global/2966" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/global/2967" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/global/3592" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/global/3593" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/global/4175" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/global/4176" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/global/4177" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/global/6000" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/global/6001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/global/6002" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/global/pg_filenode.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/global/pg_internal.init" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/postmaster.opts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/postgres-order/postmaster.pid" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_service/src/main/resources/application-docker.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_service/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/realms/realm-export.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/securityhotspotstore/index.pb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api_gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_gateway/src/main/java/com/pradhidas/api_gateway/ApiGatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/api_gateway/src/main/java/com/pradhidas/api_gateway/ApiGatewayApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_gateway/src/main/java/config/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api_gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery_server_new/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/discovery_server_new/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery_server_new/src/main/java/com/pradhidas/discovery_server_new/DiscoveryServerNewApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/discovery_server_new/src/main/java/com/pradhidas/discovery_server_new/DiscoveryServerNewApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery_server_new/src/main/java/com/pradhidas/discovery_server_new/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/discovery_server_new/src/main/java/com/pradhidas/discovery_server_new/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/discovery_server_new/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/discovery_server_new/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/inventory_service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory_service/src/main/java/com/pradhidas/inventory_service/InventoryServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory_service/src/main/java/com/pradhidas/inventory_service/InventoryServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory_service/src/main/java/com/pradhidas/inventory_service/controller/InventoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory_service/src/main/java/com/pradhidas/inventory_service/controller/InventoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory_service/src/main/java/com/pradhidas/inventory_service/repository/InventoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/inventory_service/src/main/java/com/pradhidas/inventory_service/repository/InventoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory_service/src/main/java/com/pradhidas/inventory_service/util/DataLoader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inventory_service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/inventory_service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/notification_service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification_service/src/main/java/com/pradhidas/NotificationServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification_service/src/main/java/com/pradhidas/NotificationServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification_service/src/main/java/com/pradhidas/OrderPlacedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/notification_service/src/main/java/com/pradhidas/OrderPlacedEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notification_service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/notification_service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/order_service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_service/src/main/java/com/pradhidas/order_service/OrderServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/order_service/src/main/java/com/pradhidas/order_service/OrderServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_service/src/main/java/com/pradhidas/order_service/config/WebClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/order_service/src/main/java/com/pradhidas/order_service/config/WebClientConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_service/src/main/java/com/pradhidas/order_service/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/order_service/src/main/java/com/pradhidas/order_service/controller/OrderController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_service/src/main/java/com/pradhidas/order_service/dto/InventoryResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/order_service/src/main/java/com/pradhidas/order_service/dto/InventoryResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_service/src/main/java/com/pradhidas/order_service/event/OrderPlacedEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/order_service/src/main/java/com/pradhidas/order_service/event/OrderPlacedEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_service/src/main/java/com/pradhidas/order_service/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/order_service/src/main/java/com/pradhidas/order_service/service/OrderService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order_service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/order_service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/product_service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_service/src/main/java/com/pradhidas/product_service/ProductServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/product_service/src/main/java/com/pradhidas/product_service/ProductServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/product_service/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2SyYoYs2qtEbSgWO5zB5doQxYlP" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/pradh/microservices-new&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;terminal&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;PLAIN_TEXT&quot;
+    ]
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\pradh\microservices-new\inventory_service\src\main\java\com\pradhidas\inventory_service" />
+      <recent name="C:\Users\pradh\microservices-new\realms" />
+      <recent name="C:\Users\pradh\microservices-new\discovery_server\src" />
+      <recent name="C:\Users\pradh\microservices-new\discovery_server" />
+      <recent name="C:\Users\pradh\microservices-new\inventory_service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\pradh\microservices-new\realms" />
+      <recent name="C:\Users\pradh\microservices-new\product_service\src\main\resources" />
+      <recent name="C:\Users\pradh\microservices-new\order_service\src\main\resources" />
+      <recent name="C:\Users\pradh\microservices-new\notification_service\src\main\resources" />
+      <recent name="C:\Users\pradh\microservices-new\api_gateway\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean compile package" />
+      <command value="mvn clean verify" />
+      <command value="mvn install -DskipTests" />
+      <command value="mvn clean" />
+      <command value="mvn clean compile jib:build" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.ProductServiceApplication">
+    <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pradhidas.api_gateway.ApiGatewayApplication" />
+      <module name="api_gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pradhidas.api_gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DiscoveryServerNewApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pradhidas.discovery_server_new.DiscoveryServerNewApplication" />
+      <module name="discovery_server_new" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pradhidas.discovery_server_new.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InventoryServiceApplication2" type="Application" factoryName="Application">
+      <envs>
+        <env name="server.port" value="8083" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="com.pradhidas.inventory_service.InventoryServiceApplication" />
+      <module name="inventory_service" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InventoryServiceApplication3" type="Application" factoryName="Application">
+      <envs>
+        <env name="server.port" value="8084" />
+      </envs>
+      <option name="MAIN_CLASS_NAME" value="com.pradhidas.inventory_service.InventoryServiceApplication" />
+      <module name="inventory_service" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NotificationServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pradhidas.NotificationServiceApplication" />
+      <module name="notification_service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pradhidas.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pradhidas.order_service.OrderServiceApplication" />
+      <module name="order_service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pradhidas.order_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProductServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.pradhidas.product_service.ProductServiceApplication" />
+      <module name="product_service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.pradhidas.product_service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.InventoryServiceApplication3" />
+      <item itemvalue="Application.InventoryServiceApplication2" />
+      <item itemvalue="Application.ProductServiceApplication" />
+      <item itemvalue="Application.DiscoveryServerNewApplication" />
+      <item itemvalue="Application.NotificationServiceApplication" />
+      <item itemvalue="Application.ApiGatewayApplication" />
+      <item itemvalue="Application.OrderServiceApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.ProductServiceApplication" />
+        <item itemvalue="Application.OrderServiceApplication" />
+        <item itemvalue="Application.NotificationServiceApplication" />
+        <item itemvalue="Application.DiscoveryServerNewApplication" />
+        <item itemvalue="Application.ApiGatewayApplication" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -43,5 +989,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
