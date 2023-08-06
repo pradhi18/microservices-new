@@ -30,4 +30,10 @@ public class OrderController {
         return CompletableFuture.supplyAsync(() -> "Oops! Something went wrong, please order after some time!");
     }
 
+    @GetMapping("/increase-cpu")
+    public String increaseCpu() {
+        orderService.calculatePi(1000000000);
+        return "CPU usage increased";
+    }
+
 }

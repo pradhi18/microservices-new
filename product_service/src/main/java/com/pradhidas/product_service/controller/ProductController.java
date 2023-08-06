@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -26,5 +27,18 @@ public class ProductController {
     @ResponseStatus(HttpStatus.OK)
     public List<ProductResponse> getAllProducts() {
         return productService.getAllProducts();
+    }
+
+    @GetMapping("/increase-memory")
+    public String increaseMemory() {
+        allocateMemory();
+        return "Memory increased";
+    }
+
+    private void allocateMemory() {
+        List<byte[]> memoryIntensiveList = new ArrayList<>();
+        for (int i = 0; i < 10000; i++) {
+            memoryIntensiveList.add(new byte[1024 * 1024]); // Allocate 1MB each time
+        }
     }
 }

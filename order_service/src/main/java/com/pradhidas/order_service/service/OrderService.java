@@ -82,4 +82,12 @@ public class OrderService {
         orderLineItems.setSkuCode(orderLineItemsDto.getSkuCode());
         return orderLineItems;
     }
+
+    public static double calculatePi(long iterations) {
+        double pi = 0.0;
+        for (long i = 0; i < iterations; i++) {
+            pi += Math.pow(-1, i) / (2 * i + 1);
+        }
+        return pi * 4;
+    }
 }
